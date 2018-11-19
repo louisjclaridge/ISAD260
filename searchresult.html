@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!--Font Awesome Import-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Hello, world!</title>
+
   </head>
     <nav style="background-color:darkblue" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -26,40 +28,95 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-success my-2 my-sm-0" type="submit">View Cart <i class="fas fa-shopping-cart"></i></button>
+      <label style="color: white; padding-left: 10px;">4 Item(s)</label>
     </form>
   </div>
 </nav>
-    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Search Results</li>
+  </ol>
+</nav>
+
   <body>
-<div class="container-fluid" style="width: 80%">
+<div class="container-fluid">
   <br><br><br>
   <h3>12 search results..</h3>
-  <br><br>
+  <br>
+  <div class="row" style="margin: 0">
+  <div class="col-sm-2">
+  <h3>Filters</h3>
+  <ul class="list-group">
+  <li class="list-group-item" style="text-decoration: underline; font-weight: bold;">Min/Max Price</li>
+  <li class="list-group-item"><input type="range" class="form-control-range" id="formControlRange"></li>
+  <li class="list-group-item" style="text-decoration: underline; font-weight: bold;">Brand</li>
+  <li class="list-group-item">
+    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected disabled>Choose...</option>
+        <option value="1">Brand 1</option>
+        <option value="2">Brand 2</option>
+        <option value="3">Brand 3</option>
+        <option value="3">Brand 4</option>
+      </select>
+  </li>
+  <li class="list-group-item " style="text-decoration: underline; font-weight: bold;">Department</li>
+  <li class="list-group-item">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="exampleRadios1">
+    Department 1
+  </label>
+  <br>
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="exampleRadios1">
+    Department 2
+  </label>
+  <br>
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="exampleRadios1">
+    Department 3
+  </label>
+  <br>
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="exampleRadios1">
+    Department 4
+  </label>
+  <br>
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="exampleRadios1">
+    Department 5
+  </label>
+  <br>
+</div>
+  </li>
+</ul>
+  </div>
+  <div class="col-sm-10" style="padding: 0px">
   <div class="row text-center">
   <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
 </div>
 <br><br>
@@ -67,25 +124,25 @@
   <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
 </div>
 <br><br>
@@ -93,28 +150,31 @@
   <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
     
 <div class="col">
   <img src="https://via.placeholder.com/150"/>
   <h2>Item Title</h2>
-  <button class="btn btn-success">Find out more</button>
+  <button class="btn btn-success">Add to cart <i class="fas fa-cart-plus"></i></button>
   </div>
 </div>
 </div>
+</div>
+</div>
+<br><br><br><br><br>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
