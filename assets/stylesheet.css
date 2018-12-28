@@ -1,0 +1,28 @@
+.center 
+{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.menu-padding
+{
+	padding-right: 5px;
+}
+
+/*Override to stop dropdown overflowing page */
+.dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.dropdown-align {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.feedback:hover
+{
+	background-color: #1e7e34;
+	color: white;
+}
